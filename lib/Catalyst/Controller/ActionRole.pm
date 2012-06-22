@@ -1,5 +1,5 @@
 package Catalyst::Controller::ActionRole;
-# ABSTRACT: Apply roles to action instances
+# ABSTRACT: [DEPRECATED] Apply roles to action instances
 
 use Moose;
 use Class::MOP;
@@ -23,6 +23,12 @@ extends 'Catalyst::Controller';
     BEGIN { extends 'Catalyst::Controller::ActionRole' }
 
     sub bar : Local Does('Moo') { ... }
+
+=head1 DEPRECATION
+
+As of version C<5.90013>, L<Catalyst> has merged this functionality into the
+core L<Catalyst::Controller>.  You should no longer use it for new development
+and we'd recommend switching to the core controller as you can when you upgrade.
 
 =head1 DESCRIPTION
 

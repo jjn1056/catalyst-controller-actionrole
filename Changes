@@ -1,3 +1,9 @@
+0.16  Fri, 22, June 2010 09:13:00 +0500
+  * Updated documentation to let people know this has been merged into the
+    recent 5.90013 version of Catalyst, and therefore it is considered
+    deprecated for new development and only remains for legacy / historical
+    reasons.
+
 0.15  Thu, 26 Aug 2010 00:22:42 +0200
   * Improvements to documentation (William King, Tomas Doran)
   * Don't apply roles to special internal catalyst actions
